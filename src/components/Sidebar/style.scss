@@ -1,0 +1,12 @@
+.sidebar {
+    width: 7%;
+	max-width: 415px;
+	display: flex;
+	flex-direction: column;
+	background-color: #101010;
+    overflow-y: auto;
+}
+
+nav {
+    padding-top: 70px;
+}
