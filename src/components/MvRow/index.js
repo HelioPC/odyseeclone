@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { VscExtensions } from 'react-icons/vsc';
 
 import './style.scss';
@@ -16,7 +16,14 @@ export default function MvRow({title, items}){
                 {items.results.length > 0 && items.results.map((item, key) => (
                     <div className="mvrow-item" key={key}>
                         <div className="img">
-                            <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
+                            <img
+                                src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
+                                onError={({ currentTarget }) => {
+                                    currentTarget.onerror = null; // prevents looping
+                                    currentTarget.src=`https://image.tmdb.org/t/p/w300${items.results[0].poster_path}`;
+                                }}
+                                alt={item.original_title}
+                            />
                         </div>
 
                         <p>Meet the Strangest Spy Who Ever Lived</p>

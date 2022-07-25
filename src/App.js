@@ -37,91 +37,130 @@ function App() {
 					<nav>
 						<div className='sidebar-elements'>
 							<div className='element'>
-								<NavLink to='/' activeClassName="active">
+								<NavLink
+									to='/'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscHome size={iconSize} />
 									<p>Início</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/follow'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscHeart size={iconSize} />
 									<p>Seguindo</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/feat' activeClassName="active">
+								<NavLink
+									to='/feat'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscExtensions size={iconSize} />
 									<p>Featured</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscGitMerge size={iconSize} />
 									<p>Pop Culture</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscDebugDisconnect size={iconSize} />
 									<p>Música</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscCircuitBoard size={iconSize} />
 									<p>Artists</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscBeaker size={iconSize} />
 									<p>Education</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscExtensions size={iconSize} />
 									<p>Games</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscHeart size={iconSize} />
 									<p>Universe</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscDebugDisconnect size={iconSize} />
 									<p>Tech</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscGitMerge size={iconSize} />
 									<p>Política</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscExtensions size={iconSize} />
 									<p>Finanças 2.0</p>
 								</NavLink>
 							</div>
 
 							<div className='element'>
-								<NavLink to='/nowhere' activeClassName="active">
+								<NavLink
+									to='/nowhere'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
 									<VscBeaker size={iconSize} />
 									<p>Velho Oeste</p>
 								</NavLink>
