@@ -7,14 +7,6 @@ import Header from './components/Header';
 import Videos from './components/Videos';
 import './style.scss';
 
-/*
-<section className='list'>
-	{movieList.map((item, key) => (
-		<MvRow key={key} title={item.title} items={item.items} />
-	))}
-</section>
- */
-
 function App() {
 	const [movieList, setMovieList] = useState([]);
 	const iconSize = 23;
@@ -31,7 +23,7 @@ function App() {
 	return (
 		<div className="app">
 			<Header />
-	
+
 			<Router>
 				<div className='sidebar'>
 					<nav>

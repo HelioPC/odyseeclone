@@ -2,7 +2,6 @@ import React from "react";
 import { VscExtensions } from 'react-icons/vsc';
 
 import './style.scss';
-// https://upload.wikimedia.org/wikipedia/commons/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg
 
 export default function MvRow({title, items}){
     return (
